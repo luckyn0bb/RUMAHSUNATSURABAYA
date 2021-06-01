@@ -22,12 +22,34 @@
       <link rel="stylesheet" href="css/style.css" />
       <!-- Responsive CSS -->
       <link rel="stylesheet" href="css/responsive.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="js/google-places.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyChenNhn7qq7OY9j-yYrjR5Fbil3ZWYCSk"></script>
+      <script>
+         jQuery(document).ready(function() {
+             $("#google-reviews").googlePlaces({
+                 placeId: 'ChIJFy7EoT7_1y0RMGrdNIe1uMs',
+                 render: ['reviews'],
+                 min_rating: 5,
+                 max_rows: 0
+             });
+         });
+     </script>
       <!-- Custom CSS -->
       <link rel="stylesheet" href="css/custom.css" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <a href="https://api.whatsapp.com/send?phone=+6281235372938&text=Halo%21%20apakah%20betul%20ini%20dengan%20rumah%20sunat%20surabaya?" class="float" style="float:left">
-      <i class="fa fa-whatsapp my-float"></i>
-      </a>
+   <div class="container">
+      <div class="floatin_button">   
+      <ul>
+         <li><a href="https://api.whatsapp.com/send?phone=+6281235372938&text=Halo%21%20apakah%20betul%20ini%20dengan%20rumah%20sunat%20surabaya?" class="float">
+         <i class="fa fa-whatsapp my-float"></i></a></li>
+         <li><a href="https://www.google.com/maps?ll=-7.268221,112.655666&z=14&t=m&hl=en&gl=ID&mapclient=embed&cid=14679682577726270000" class="act-btn">
+         <i class="fa fa-map-marker my-float1"></i></a></li>
+         <li><a href="https://instagram.com/rumahsunat.surabaya?utm_medium=copy_link" class="act-btn1">
+         <i class="fa fa-instagram my-float2"></i></a></li>
+      </ul>
+      </div>
+   </div>
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -88,7 +110,7 @@
                   <div class="col-md-12">
                      <div class="full">
                         <div class="heading_main text_align_center" id="mengapa">
-                           <h2>Mengapa Kami?</h2>
+                           <h2 class="word">Mengapa Kami?</h2>
                         </div>
                      </div>
                   </div>
@@ -159,19 +181,16 @@
          <!-- section -->
          <!-- end section -->
          <!-- section -->
-         <div class="section dark_blue_layout white_fonts layout_padding">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12 col-lg-4">
-                     <div class="full">
-                        <div class="heading_main text_align_left" style="margin-bottom: 0;" id="testimoni">
-                           <h2><strong class="small">Gimana sih kata orang yang sudah sunat di tempat kami?</strong><br>-Testimoni-</h2>
-                        </div>
-                     </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div class="full">
+                  <div class="heading_main text_align_center margin-bottom_30" id="testimoni">
+                     <h2 class="word">Testimoni</h2>
                   </div>
                </div>
             </div>
          </div>
+         <div id="google-reviews"></div>
          <!-- end section -->
          <!-- section -->
          <div class="section about_section layout_padding">
@@ -180,7 +199,7 @@
                   <div class="col-md-12">
                      <div class="full">
                         <div class="heading_main text_align_center margin-bottom_30" id="metode">
-                           <h2>Ragam Metode yang kami Gunakan</h2>
+                           <h2 class="word">Ragam Metode yang kami Gunakan</h2>
                         </div>
                      </div>
                   </div>
@@ -313,15 +332,16 @@
                            <br>
                            <br>
                            <br>
-                           <div class="row">
-                                 <div class="col-md-12">
-                                    <div class="full">
-                                       <div class="heading_main text_align_center margin-bottom_30" id="galeri">
-                                          <h2>Galeri Sukses Sunat</h2>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
+         <!-- section -->
+         <div class="row">
+            <div class="col-md-12">
+               <div class="full">
+                  <div class="heading_main text_align_center margin-bottom_30" id="galeri">
+                     <h2 class="word">Galeri Sunat</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
                            <section id="photos">
                               <img src="images/gallery 1.jpg" alt="">
                               <img src="images/gallery 2.jpg" alt="">
@@ -333,22 +353,9 @@
                               <img src="images/gallery 8.jpg" alt="">
                               <img src="images/gallery 9.jpg" alt="">
                               <img src="images/gallery 10.jpg" alt="">
+                              <img src="images/gallery 11.jpg" alt="">
+                              <img src="images/gallery 12.jpg" alt="">
                             </section>
-                     <br>
-                     <br>
-                     <br>
-                     <div class="text_align_center">
-                     <h2><b>Masih banyak galeri sukses sunat lainnyaa</b></h2>
-                     <h2><b>Silahkan Kunjungi Instagram Kami</b></h2>
-                     <a href="#"><i class="fa fa-instagram" style="font-size:48px;color:red"></i><br>@rumahsunat.surabaya</a></li>
-                     <hr>
-                     </div>
-
-                     <div class="instagram" style="text-align: center;">
-                        <iframe class="embed-responsive-item" src="https://www.instagram.com/p/CL4CrXlrLK9/embed" width="400" height="500" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                     </div>
-
-
                       </div>
                    </div>
             </div>
@@ -358,7 +365,7 @@
             <div class="col-md-12">
                <div class="full">
                   <div class="heading_main text_align_center margin-bottom_30">
-                     <h2>LOKASI</h2>
+                     <h2 class="word">LOKASI</h2>
                </div>
             </div>
          </div>
@@ -433,9 +440,7 @@
             </div>
          </div>
       </div>
-      <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
       <!-- ALL JS FILES -->
-      <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <!-- ALL PLUGINS -->
@@ -449,6 +454,7 @@
       <script src="js/images-loded.min.js"></script>
       <script src="js/jquery.mb.YTPlayer.min.js"></script>
       <script src="js/custom.js"></script>
+
       <!-- End Google Map -->
       <script>
          $(document).ready(function() {
@@ -466,14 +472,7 @@
            });
          });
       </script>
-
-      <script>
-         for (var i = 0; i < 25; i++) {
-         var width = getRandomSize(200, 400);
-         var height =  getRandomSize(200, 400);
-         $('#photos').append('');
-}
-      </script>
+      
       <!-- google map js -->
       <!-- end google map js -->
    </body>
